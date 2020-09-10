@@ -10,4 +10,5 @@
 .env
 composer.lock
 symfony.lock
+migrations/*
 ###< symfony/framework-bundle ###

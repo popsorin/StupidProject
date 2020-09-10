@@ -12,7 +12,7 @@ use Symfony\Component\Routing\Annotation\Route;
 class OrderController extends AbstractController
 {
     /**
-     * @Route("/order/new", name="new_order", methods={"POST"})
+     * @Route("/order/new", name="new_order", methods={"GET","POST"})
      *
      * @param Request $request
      * @return Response

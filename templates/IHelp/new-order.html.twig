@@ -1,5 +1,4 @@
-{% extends "../base.html.twig"%}
-{% extends "base.html.twig" %}
+{% extends "base.html.twig"%}
 {% block navbar "" %}
 {% block body %}
     {{ form_start(form) }}
@@ -38,23 +37,16 @@
                         {{ form_row(form.proposedPrice) }}
                     </div>
                     <div class="form-group col-md-6">
-                        {{ form_row(form.Date) }}
+                        {{ form_row(form.date) }}
                     </div>
 
                     <div class="form-group col-md-6">
-                        {{ form_row(form.Status) }}
+                        {{ form_row(form.status) }}
                     </div>
                 </div>
                 {{ form_row(form.submit) }}
             </div>
         </div>
-    </div>
-    <div class="col-md-6">
-        <ul>
-            {% for error in errors %}
-                <li>{{ error.message }}</li>
-            {% endfor %}
-        </ul>
     </div>
     {{ form_end(form) }}
 {% endblock %}

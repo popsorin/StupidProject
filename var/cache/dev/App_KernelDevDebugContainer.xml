@@ -186,7 +186,6 @@
     </service>
     <service id="App\FormType\OrderFormType" class="App\FormType\OrderFormType" autowire="true" autoconfigure="true">
       <tag name="form.type"/>
-      <argument type="service" id="property_accessor"/>
     </service>
     <service id="App\Repository\OrderRepository" class="App\Repository\OrderRepository" autowire="true" autoconfigure="true">
       <tag name="doctrine.repository_service"/>

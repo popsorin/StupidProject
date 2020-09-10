@@ -8,7 +8,7 @@
 return [
     false, // $matchHost
     [ // $staticRoutes
-        '/order/new' => [[['_route' => 'new_order', '_controller' => 'App\\Controller\\OrderController::new'], null, ['POST' => 0], null, false, false, null]],
+        '/order/new' => [[['_route' => 'new_order', '_controller' => 'App\\Controller\\OrderController::new'], null, ['GET' => 0, 'POST' => 1], null, false, false, null]],
     ],
     [ // $regexpList
         0 => '{^(?'
