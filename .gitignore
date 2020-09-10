@@ -6,8 +6,8 @@
 /config/secrets/prod/prod.decrypt.private.php
 /public/bundles/
 /src/preload.php
-.idea
+.idea/
 .env
-/var/
-/vendor/
+composer.lock
+symfony.lock
 ###< symfony/framework-bundle ###
