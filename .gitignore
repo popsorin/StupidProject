@@ -10,6 +10,6 @@
 .env
 composer.lock
 symfony.lock
-/migrations/
+/migrations/*
 /var/*
 ###< symfony/framework-bundle ###
