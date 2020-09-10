@@ -11,5 +11,5 @@
 composer.lock
 symfony.lock
 /migrations/
-/var/
+/var/*
 ###< symfony/framework-bundle ###
