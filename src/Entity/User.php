@@ -49,6 +49,16 @@ class User
      */
     private $orders;
 
+    /**
+     * @ORM\Column(type="string", nullable=true)
+     */
+    private $photo;
+
+    /**
+     * @ORM\Column(type="integer", nullable=true)
+     */
+    private $rating;
+
     public function getId(): ?int
     {
         return $this->id;

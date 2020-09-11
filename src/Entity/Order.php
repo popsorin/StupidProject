@@ -45,7 +45,7 @@ class Order
     private $email;
 
     /**
-     * @ORM\Column(type="string", length=500)
+     * @ORM\Column(type="string")
      */
     private $description;
 
