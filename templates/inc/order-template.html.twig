@@ -1,0 +1,54 @@
+{#Authors: Sorin Pop#}
+{% extends "base.html.twig"%}
+{% block navbar "" %}
+{% block body %}
+    {{ form_start(form) }}
+    <div class="container register-form col-md-6">
+        <div class="form">
+            <div class="title">
+                <p>Introduceti datele pentru a salva documentul</p>
+            </div>
+            <div class="form-content">
+                <div class="row">
+                    <div class="form-group col-md-6">
+                        {{ form_row(form.title) }}
+                    </div>
+
+                    <div class="form-group col-md-6">
+                        {{ form_row(form.category) }}
+                    </div>
+
+                    <div class="form-group col-md-6">
+                        {{ form_row(form.address) }}
+                    </div>
+
+                    <div class="form-group col-md-6">
+                        {{ form_row(form.phone) }}
+                    </div>
+
+                    <div class="form-group col-md-6">
+                        {{ form_row(form.email) }}
+                    </div>
+
+                    <div class="form-group col-md-6">
+                        {{ form_row(form.description) }}
+                    </div>
+
+                    <div class="form-group col-md-6">
+                        {{ form_row(form.proposedPrice) }}
+                    </div>
+                    <div class="form-group col-md-6">
+                        {{ form_row(form.date) }}
+                    </div>
+
+                    <div class="form-group col-md-6">
+                        {{ form_row(form.status) }}
+                    </div>
+                </div>
+                {{ form_row(form.submit) }}
+            </div>
+        </div>
+    </div>
+    {{ form_end(form) }}
+{% endblock %}
+{% block pagination "" %}
